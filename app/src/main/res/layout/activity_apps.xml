@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layoutDirection="rtl" android:orientation="vertical"
+    android:background="@drawable/bg_main" android:padding="32dp">
+    <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="📦 التطبيقات المثبتة" android:textColor="@color/sky" android:textSize="32sp"
+        android:textStyle="bold" android:textAlignment="viewStart" android:textDirection="firstStrong" />
+    <TextView android:id="@+id/tvCount" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/muted" android:textSize="18sp"
+        android:textAlignment="viewStart" android:textDirection="firstStrong" />
+    <EditText android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="64dp"
+        android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:background="@drawable/bg_input"
+        android:hint="ابحث بالاسم أو اسم الحزمة (اضغط OK لإظهار لوحة المفاتيح)"
+        android:textColorHint="@color/muted" android:textColor="@color/text" android:textSize="20sp"
+        android:imeOptions="actionDone" android:inputType="text" android:maxLines="1"
+        android:paddingStart="16dp" android:paddingEnd="16dp" android:focusable="true"
+        android:textAlignment="viewStart" android:textDirection="firstStrong" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:clipToPadding="false" />
+</LinearLayout>
