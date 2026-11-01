@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layoutDirection="rtl" android:orientation="vertical"
+    android:background="@drawable/bg_main" android:padding="32dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="📄 التقارير" android:textColor="@color/sky" android:textSize="32sp"
+        android:textStyle="bold" android:textAlignment="viewStart" />
+    <TextView android:id="@+id/tvInfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:textColor="@color/muted"
+        android:textSize="18sp" android:textAlignment="viewStart" android:textDirection="firstStrong" />
+    <Button android:id="@+id/btnTxt" android:layout_width="match_parent" android:layout_height="76dp"
+        android:layout_marginBottom="12dp" android:background="@drawable/bg_button" android:focusable="true"
+        android:text="تصدير التقرير بصيغة TXT" android:textAllCaps="false" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:stateListAnimator="@null" />
+    <Button android:id="@+id/btnJson" android:layout_width="match_parent" android:layout_height="76dp"
+        android:layout_marginBottom="12dp" android:background="@drawable/bg_button" android:focusable="true"
+        android:text="تصدير التقرير بصيغة JSON" android:textAllCaps="false" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:stateListAnimator="@null" />
+    <Button android:id="@+id/btnCopy" android:layout_width="match_parent" android:layout_height="76dp"
+        android:layout_marginBottom="12dp" android:background="@drawable/bg_button" android:focusable="true"
+        android:text="نسخ المعلومات إلى الحافظة" android:textAllCaps="false" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:stateListAnimator="@null" />
+    <Button android:id="@+id/btnShare" android:layout_width="match_parent" android:layout_height="76dp"
+        android:background="@drawable/bg_button" android:focusable="true"
+        android:text="مشاركة التقرير" android:textAllCaps="false" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:stateListAnimator="@null" />
+</LinearLayout>
