@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp" android:orientation="horizontal" android:padding="14dp"
+    android:background="@drawable/bg_card" android:focusable="true">
+    <TextView android:id="@+id/tvLabel" android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="0.35" android:textColor="@color/sky" android:textSize="20sp"
+        android:textStyle="bold" android:textAlignment="viewStart" android:textDirection="firstStrong" />
+    <TextView android:id="@+id/tvValue" android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="0.65" android:layout_marginStart="16dp" android:textColor="@color/text"
+        android:textSize="20sp" android:textAlignment="viewStart" android:textDirection="firstStrong" />
+</LinearLayout>
